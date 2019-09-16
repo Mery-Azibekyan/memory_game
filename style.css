@@ -1,0 +1,74 @@
+* {
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+
+body {
+	height: 100vh;
+	background : #f8fab6;
+	display:flex;
+}
+
+button{
+	padding: 10px;
+	font-size: 20px;
+	color:#3566e6;
+	border-radius: 10px;
+	background: 
+}
+
+#container{
+	margin: auto;
+}
+
+#level{
+	font-size: 40px;
+	text-align: center;
+	padding: 20px;
+	font-weight: bold;
+}
+
+
+	
+div#memory_card{
+	width:840px;
+	height:640px;
+	display: flex;
+	margin :auto;
+	flex-wrap : wrap;
+	perspective : 1000px;
+}
+
+div#memory_card > div{
+	width:calc(25% - 10px);
+	height:calc(50% - 10px);
+	margin:5px;
+	position : relative;
+	transform-style: preserve-3d;
+	transition: transform .5s;
+	}
+
+
+
+
+.flip{
+	transform: rotateY(180deg);
+}
+
+
+
+.front,
+.back {
+	width: 100%;
+	height : 100%;
+	background-color : #b5f5e4;
+	border-radius: 5px;
+	position : absolute;
+	backface-visibility: hidden;
+}
+
+.back {
+	transform:rotateY(180deg);
+
+}
